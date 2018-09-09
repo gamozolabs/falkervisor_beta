@@ -1,5 +1,7 @@
 # Falkervisor (brownie)
 
+This is a hypervisor for fuzzing. It runs on bare metal (not a driver), and runs on AMD fam15h machines. It's pretty cool but there are so many issues with this version, but it's still fun to look at and try to use.
+
 This is one of the first versions of falkervisor. It was used to find bugs in Chrome sandbox, Windows Defender, Word (RTF), and probably some other random crap between 2014-2015. Since I didn't use version control I'm probably missing pieces, but this actually builds and should run on any AMD fam15h machine. It should be able to boot up single-core OSes right off IDE based disk, and take snapshots via proprietary falktp which I don't have the server for anymore, so you'd have to reverse it. You also need an Intel x540 for this to run.
 
 It was quickly dropped in favor of C once I became more sane. It is the foundation of most of the concepts used in my modern version of falkervisor, which is now written in Rust.
