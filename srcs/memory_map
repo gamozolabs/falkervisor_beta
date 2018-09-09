@@ -1,0 +1,46 @@
+Physical Map:
+
+	E820 memory map:
+	0x00000000`00000500 - 0x00000000`xxxxxxxx : Unbounded, likely < 1KB
+
+	Physical page table
+	0x00000000`00100000 - 0x00000000`00102000 : 8 KB Cache disable, WT
+	0x00000001`00102000 - 0x00000001`00103000 : 4 KB Cache enable (cephys)
+
+	PNM page table(s)
+	0x00000001`00103000 - 0x00000001`00104000 : 4 KB (at most) Node 0
+	0x00000001`00104000 - 0x00000001`00105000 : 4 KB (at most) Node 1
+	0x00000001`00105000 - 0x00000001`00106000 : 4 KB (at most) Node 2
+	0x00000001`00106000 - 0x00000001`00107000 : 4 KB (at most) Node 3
+	0x00000001`00107000 - 0x00000001`00108000 : 4 KB (at most) Node 4
+	0x00000001`00108000 - 0x00000001`00109000 : 4 KB (at most) Node 5
+	0x00000001`00109000 - 0x00000001`0010a000 : 4 KB (at most) Node 6
+	0x00000001`0010a000 - 0x00000001`0010b000 : 4 KB (at most) Node 7
+
+	Everything below physical 8MB is not touched by anything using the BAMP
+	unless it directly uses the low 512GB mapping to touch devices, or just
+	buggy code.
+
+	Generic use memory mapped to the PNM
+	0x00000000`00800000 - 0x********`******** : Varies
+
+Virtual Map:
+
+	Identity mapped cache disabled, write through section
+	0x00000000`00000000 - 0x00000080`00000000 : 512 GB
+
+	Identity mapped full caching
+	0x00000080`00000000 - 0x00000100`00000000 : 512 GB
+
+	Per node memory (PNM):
+	 no aslr: ((node_id + 2) << 39) - 0x********`******** : Varies
+
+	  Example: Node 0 @ 0x10000000000
+	           Node 1 @ 0x18000000000
+	           Node 2 @ 0x20000000000
+	           Node 3 @ 0x28000000000
+	           Node 4 @ 0x30000000000
+	           Node 5 @ 0x38000000000
+	           Node 6 @ 0x40000000000
+	           Node 7 @ 0x48000000000
+

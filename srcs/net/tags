@@ -1,0 +1,48 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+endstruc	.\falktp.asm	/^endstruc$/;"	l
+endstruc	.\i825xx.asm	/^endstruc$/;"	l
+endstruc	.\x540.asm	/^endstruc$/;"	l
+falktp_pull	.\falktp.asm	/^falktp_pull:$/;"	l
+i825xx_fetch_pci	.\i825xx.asm	/^i825xx_fetch_pci:$/;"	l
+i825xx_get_tx_descriptor	.\i825xx.asm	/^i825xx_get_tx_descriptor:$/;"	l
+i825xx_init	.\i825xx.asm	/^i825xx_init:$/;"	l
+i825xx_init_rx	.\i825xx.asm	/^i825xx_init_rx:$/;"	l
+i825xx_init_thread_local	.\i825xx.asm	/^i825xx_init_thread_local:$/;"	l
+i825xx_init_tx	.\i825xx.asm	/^i825xx_init_tx:$/;"	l
+i825xx_poll_rx	.\i825xx.asm	/^i825xx_poll_rx:$/;"	l
+i825xx_send_packet	.\i825xx.asm	/^i825xx_send_packet:$/;"	l
+i825xx_send_packets	.\i825xx.asm	/^i825xx_send_packets:$/;"	l
+i825xx_tx_acquire_spinlock	.\i825xx.asm	/^i825xx_tx_acquire_spinlock:$/;"	l
+i825xx_tx_release_spinlock	.\i825xx.asm	/^i825xx_tx_release_spinlock:$/;"	l
+shitsum	.\falktp.asm	/^shitsum:$/;"	l
+struc	.\falktp.asm	/^struc falktp_chunk$/;"	l
+struc	.\falktp.asm	/^struc falktp_dat$/;"	l
+struc	.\falktp.asm	/^struc falktp_dat_done$/;"	l
+struc	.\falktp.asm	/^struc falktp_fin$/;"	l
+struc	.\falktp.asm	/^struc falktp_push$/;"	l
+struc	.\falktp.asm	/^struc falktp_push_ack$/;"	l
+struc	.\falktp.asm	/^struc falktp_req$/;"	l
+struc	.\i825xx.asm	/^struc i825xx_tx_desc$/;"	l
+struc	.\x540.asm	/^struc x540_tx_desc$/;"	l
+udp_template	.\i825xx.asm	/^udp_template:$/;"	l
+udp_template_10g	.\x540.asm	/^udp_template_10g:$/;"	l
+udp_template_10g_len	.\x540.asm	/^udp_template_10g_len: equ (udp_template_10g.end - udp_template_10g)$/;"	d
+udp_template_len	.\i825xx.asm	/^udp_template_len: equ (udp_template.end - udp_template)$/;"	d
+update_ipv4_checksum	.\i825xx.asm	/^update_ipv4_checksum:$/;"	l
+x540_fetch_pci	.\x540.asm	/^x540_fetch_pci:$/;"	l
+x540_init	.\x540.asm	/^x540_init:$/;"	l
+x540_init_local_rx	.\x540.asm	/^x540_init_local_rx:$/;"	l
+x540_init_local_tx	.\x540.asm	/^x540_init_local_tx:$/;"	l
+x540_poll_rx_int	.\x540.asm	/^x540_poll_rx_int:$/;"	l
+x540_poll_rx_raw	.\x540.asm	/^x540_poll_rx_raw:$/;"	l
+x540_poll_rx_udp	.\x540.asm	/^x540_poll_rx_udp:$/;"	l
+x540_probe_rx_udp	.\x540.asm	/^x540_probe_rx_udp:$/;"	l
+x540_rx_advance	.\x540.asm	/^x540_rx_advance:$/;"	l
+x540_send_packet	.\x540.asm	/^x540_send_packet:$/;"	l
+x540_send_packets	.\x540.asm	/^x540_send_packets:$/;"	l
+x540_validate_udp	.\x540.asm	/^x540_validate_udp:$/;"	l
